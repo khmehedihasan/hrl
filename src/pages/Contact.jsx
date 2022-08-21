@@ -9,7 +9,7 @@ function contact(){
     <div>
         <Nav />
 
-        <div className=' w-96 h-auto md:w-[550px] p-2 md:p-8 bg-slate-200 mt-20 m-auto rounded-md shadow-md'>
+        <div className=' w-[360px] h-auto md:w-[550px] p-2 md:p-8 bg-slate-200 mt-20 m-auto rounded-md shadow-md'>
             <h1 className=' text-center font-bold text-xl text-red-600'>Message Us</h1>
             <label className=' text-red-600' htmlFor="name">Name:</label><br />
             <input className=' w-full px-2 py-[2px] outline-red-600 text-red-400' type="text" name="name" id="name" placeholder="Enter your name: " />
