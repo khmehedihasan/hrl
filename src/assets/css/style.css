@@ -623,18 +623,6 @@ video {
   margin-top: 4rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .box-content {
   box-sizing: content-box;
 }
@@ -687,18 +675,6 @@ video {
   height: 500px;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[500\] {
-  height: 500;
-}
-
-.h-\[500p\] {
-  height: 500p;
-}
-
 .w-full {
   width: 100%;
 }
@@ -735,10 +711,6 @@ video {
   width: 360px;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -749,6 +721,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -847,6 +823,14 @@ video {
   background-image: url('../images/p1.jpg');
 }
 
+.bg-bg-hajjvisa {
+  background-image: url('../images/hajjvisa.jpg');
+}
+
+.bg-bg-banner {
+  background-image: url('../images/banner.jpg');
+}
+
 .bg-bg-kuat {
   background-image: url('../images/kuat.jpg');
 }
@@ -859,8 +843,8 @@ video {
   background-image: url('../images/tor.jpg');
 }
 
-.bg-bg-banner {
-  background-image: url('../images/banner.jpg');
+.bg-bg-omravisa {
+  background-image: url('../images/omravisa.jpg');
 }
 
 .bg-cover {
@@ -1067,28 +1051,12 @@ video {
     width: 700px;
   }
 
-  .md\:w-\[500px\] {
-    width: 500px;
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:w-\[550px\] {
     width: 550px;
-  }
-
-  .md\:w-\[\] {
-    width: ;
-  }
-
-  .md\:w-\[500\] {
-    width: 500;
-  }
-
-  .md\:w-\[0px\] {
-    width: 0px;
-  }
-
-  .md\:w-\[450px\] {
-    width: 450px;
   }
 
   .md\:flex-row {
@@ -1120,14 +1088,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-\[1000px\] {
     width: 1000px;
-  }
-
-  .lg\:w-\[700px\] {
-    width: 700px;
-  }
-
-  .lg\:w-\[00px\] {
-    width: 00px;
   }
 
   .lg\:w-\[600px\] {
