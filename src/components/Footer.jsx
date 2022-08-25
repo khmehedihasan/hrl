@@ -23,7 +23,7 @@ function Footer(){
                         <h1 className=' text-2xl'>OTHER PAGES</h1>
                         <NavLink to="/about" ><h1>About Us</h1></NavLink>
                         
-                        <NavLink to="/service" ><h1>Our Services</h1></NavLink>
+                        <NavLink to=" " ><h1>Our Services</h1></NavLink>
                         
                         <NavLink to="/contact" ><h1>Contact Us</h1></NavLink>
                         
