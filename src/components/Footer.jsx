@@ -1,10 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-const d = new Date();
-const year = d.getFullYear();
+
 
 function Footer(){
+
+    const info = useSelector((state) => state.info);
+
+    const d = new Date();
+    const year = d.getFullYear();
+
+
+
+
     return(
         <div className=' w-full bg-slate-600'>
             <div className=' w-full p-2 mx-auto md:w-[700px] lg:w-[1000px] flex flex-col md:flex-row justify-between'>
@@ -30,9 +39,10 @@ function Footer(){
                     </div>
                     <div className=' w-80 h-auto text-white text-center md:text-left flex flex-col gap-2 md:-mr-16'>
                         <h1  className=' text-2xl'>CONTACT US</h1>
-                        <div><i className="fa-solid fa-phone"></i> <a href="tel:+8802224405634">+8802224405634</a></div>
-                        <div><i className="fa-solid fa-envelope"></i> <a href="mailto:holyreview99@gmail.com">holyreview99@gmail.com</a></div>
-                        <div><i className="fa-solid fa-location-dot"></i> <span className=' pl-1 italic'>House No: 40 (Ground Floor), Road : 06, Block : C, Banasree, Rampura 1219 Dhaka, Dhaka Division, Bangladesh</span></div>
+                        <div><i className="fa-solid fa-phone"></i>  <a href={`tel:${info.phone1}`}> {info.phone1 }</a></div>
+                        <div><i className="fa-solid fa-phone"></i>  <a href={`tel:${info.phone2}`}> {info.phone2 }</a></div>
+                        <div><i className="fa-solid fa-envelope"></i> <a href={`mailto:${info.email}`}>{info.email}</a></div>
+                        <div><i className="fa-solid fa-location-dot"></i> <span className=' pl-1 italic'>{info.address}</span></div>
                     </div>
                 </div>
             </div>

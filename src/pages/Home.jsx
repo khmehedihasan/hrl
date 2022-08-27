@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import ServiceSlider from '../components/slider';
 
 
 function Home(){
@@ -8,7 +9,10 @@ function Home(){
     return(
     <div>
        <Nav /> 
-       <div className=' w-full h-[500px] block shrink-0 bg-bg-banner bg-center bg-cover bg-no-repeat'></div>
+       {/* <div className=' w-full h-[500px] block shrink-0 bg-bg-banner bg-center bg-cover bg-no-repeat'></div> */}
+       <div className=' z-0'>
+            <ServiceSlider />
+       </div>
        <div className=' md:p-16'>
                 <h1 className=' w-full text-center text-3xl underline text-red-600 py-16'>Job Visa</h1>
                 <div className=' w-full h-auto pb-16 flex flex-col items-center md:flex-row'>

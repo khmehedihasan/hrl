@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import logo from '../assets/images/logo.png';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 function Nav(){
     const [drop, setDrop] = useState('hidden');
     const [bar, setBar] = useState('-ml-[400px]');
+    const info = useSelector((state) => state.info);
+
+
+
 
     function set(){
         if(bar === '-ml-[400px]'){
@@ -13,12 +19,19 @@ function Nav(){
             setBar('-ml-[400px]');
         }
     }
+
+
     return(<>
-        <div className=" hidden md:block">
-            <div className=" w-full h-10 bg-red-600 md:px-16 text-white text-sm flex items-center justify-end">
-                <div><span>Help: </span> <i className="fa-solid fa-phone"></i><a href="tel:+88-02224405634"> 88-02224405634</a></div>
+        <div className=" w-full h-10 bg-red-600 md:px-16 text-white text-sm flex items-center justify-end"> 
+            <div><span>Help: </span> 
+                <i className="fa-solid fa-phone px-1"> </i>
+                <a href={`tel:${info.phone1}`}> {info.phone1 }</a>
+                <i className="fa-solid fa-phone pl-2 pr-2"> </i>
+                <a href={`tel:${info.phone2}`}> {info.phone2}</a>
             </div>
-            <div className="  sticky top-0 left-0">
+        </div>
+        <div className=" sticky top-0 left-0 hidden md:block z-[1000]">
+            <div className=" sticky top-0 left-0">
                 <nav className=" w-full h-16 shadow-md bg-slate-100 md:px-16 flex items-center justify-between">
                     <div className="">
                         <NavLink to="/"> <img className=" h-14" src={logo} alt="" /></NavLink>
@@ -46,7 +59,7 @@ function Nav(){
                 </nav>
             </div>
         </div>
-        <div className={`${bar} block md:hidden fixed top-0 -mt-4 transition-all ease-in-out duration-700`}>
+        <div className={`${bar} block md:hidden fixed top-0 -mt-4 transition-all ease-in-out duration-700 z-[1000]`}>
 
             <div className=" w-full fixed top-0 left-0">
                 <nav className=" w-full h-16 px-4 shadow-md bg-slate-100 md:px-16 flex items-center justify-between">
