@@ -1,5 +1,5 @@
 const url = 'http://localhost:8000'
 
-//const url = 'https://apidemo.easysheba.com';
+//const url = 'https://hrlapi.easysheba.com';
 
 export default url;
