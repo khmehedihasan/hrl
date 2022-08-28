@@ -8,9 +8,7 @@ function Nav(){
     const [drop, setDrop] = useState('hidden');
     const [bar, setBar] = useState('-ml-[400px]');
     const info = useSelector((state) => state.info);
-
-
-
+    const category = useSelector((state) => state.category);
 
     function set(){
         if(bar === '-ml-[400px]'){
@@ -45,12 +43,13 @@ function Nav(){
 
                             </div>
                             <div onMouseLeave={()=>setDrop('hidden')} className={`${drop} w-52 absolute top-14 py-2 px-1 rounded-md bg-red-600 flex gap-2 flex-col text-white`}>
-                                <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/visa">Visa</NavLink>
-                                {/* <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/visit">Visit</NavLink> */}
-                                <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/hajj">Hajj</NavLink>
-                                <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/omra">Omra</NavLink>
-                                <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/tour">Tour</NavLink>
-                                <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/airTicket">Air Ticket</NavLink>
+                                {
+                                    category.map((data,index)=>{
+                                        return(
+                                            <NavLink key={index} className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to={"/service/"+data._id}>{data.name}</NavLink>
+                                        )
+                                    })
+                                }
 
                             </div>
                         </NavLink>
@@ -77,13 +76,14 @@ function Nav(){
                         Our Service
                         <div onMouseLeave={()=>setDrop('hidden')} className={`${drop} w-60 ml-4 py-2 px-1 rounded-md bg-red-600 flex gap-2 flex-col text-white`}>
                         <div className=" w-full h-4 -ml-5 border-t box-content px-8 border-white bg-none"></div>
-                            <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/visa">Visa</NavLink>
-                            {/* <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/visit">Visit</NavLink> */}
-                            <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/hajj">Hajj</NavLink>
-                            <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/omra">Omra</NavLink>
-                            <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/tour">Tour</NavLink>
-                            <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/airTicket">Air Ticket</NavLink>
-
+                            {/* <NavLink className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to="/service/visa">Visa</NavLink> */}
+                            {
+                                    category.map((data,index)=>{
+                                        return(
+                                            <NavLink  key={index} className={({isActive})=> isActive?"bg-red-700 pl-2 rounded-md":" hover:bg-red-700 pl-2 rounded-md"} to={"/service/"+data._id}>{data.name}</NavLink>
+                                        )
+                                    })
+                                }
                         </div>
                     </NavLink>
                     <NavLink className={({isActive })=>isActive? " w-full block mt-4  py-[2px] px-1 rounded-md bg-red-600 border-2 border-transparent text-white":" w-full block mt-4  px-1 rounded-md py-[2px] border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"} to="/contact">Contact Us</NavLink>
