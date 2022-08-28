@@ -14,8 +14,11 @@ function Footer(){
 
 
 
-    return(
-        <div className=' w-full bg-slate-600'>
+    return(<>
+        {/* <div className=' h-[400px]'>
+            
+        </div> */}
+        <div className=' w-full bg-slate-600 '>
             <div className=' w-full p-2 mx-auto md:w-[700px] lg:w-[1000px] flex flex-col md:flex-row justify-between'>
                     <div className=' w-full h-auto md:h-60 pt-8 flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0'>
                     <div className=' w-72 h-auto  text-center text-white flex flex-col gap-4'>
@@ -48,7 +51,7 @@ function Footer(){
             </div>
             <div className=' bg-slate-800 text-white text-center'>Copyright {year} | Holy Review | All Rights Reserved</div>
         </div>
-    )
+    </>)
 }
 
 export default Footer;
