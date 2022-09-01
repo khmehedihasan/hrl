@@ -784,6 +784,10 @@ video {
   width: 100%;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -820,6 +824,14 @@ video {
   width: 350px;
 }
 
+.w-\[2000px\] {
+  width: 2000px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -854,6 +866,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1031,10 +1047,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-3 {
