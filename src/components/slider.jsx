@@ -5,7 +5,7 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { useSelector } from 'react-redux';
 
 
-function ServiceSlider({data}){
+function ServiceSlider(){
 
   const slider = useSelector((state) => state.slider);
 
@@ -35,6 +35,8 @@ function ServiceSlider({data}){
         autoplaySpeed: 3000,
         slidesToShow: 1,
         autoplay:true,
+        pauseOnFocus:false,
+        pauseOnHover:false,
         // slidesToScroll: 1,
         initialSlide: 0,
         // nextArrow: <SampleNextArrow />,
