@@ -20,9 +20,9 @@ function Footer(){
         </div> */}
         <div className=' w-full bg-pink-100 '>
             <div className=' w-full p-2 mx-auto md:w-[700px] lg:w-[1000px] flex flex-col md:flex-row justify-between'>
-                    <div className=' w-full h-auto md:h-60 pt-8 flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0'>
-                    <div className=' w-72 h-auto  text-center text-black flex flex-col justify-center items-center gap-4'>
-                        <img className=' w-[200px]' src={logo2} alt=" " />
+                    <div className=' w-full h-auto md:h-60 flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0'>
+                    <div className=' w-72 h-auto  text-center text-black flex flex-col items-center'>
+                        <img className=' w-[220px]' src={logo2} alt=" " />
                         {/* <h1 className=' text-2xl uppercase'> Holy Review</h1> */}
                     </div>
                     <div className=' w-72 h-auto  text-center text-black flex flex-col justify-center items-center gap-4'>
@@ -43,8 +43,8 @@ function Footer(){
                         
                     </div>
                     <div className=' w-80 h-auto text-black text-center md:text-left flex flex-col gap-2 md:-mr-16'>
-                        <div><i className="fa-solid fa-envelope"></i> <a href={`mailto:${info.email}`}>{info.email}</a></div>
                         <div><i className="fa-solid fa-location-dot"></i> <span className=' pl-1 italic'>{info.address}</span></div>
+                        <div><i className="fa-solid fa-envelope"></i> <a href={`mailto:${info.email}`}>{info.email}</a></div>
                     </div>
                 </div>
             </div>
