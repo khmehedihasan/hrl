@@ -622,8 +622,24 @@ video {
   float: left;
 }
 
+.clear-left {
+  clear: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-none {
+  clear: none;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -697,6 +713,18 @@ video {
 
 .mt-24 {
   margin-top: 6rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .box-content {
@@ -784,8 +812,8 @@ video {
   width: 100%;
 }
 
-.w-\[160px\] {
-  width: 160px;
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-80 {
@@ -824,14 +852,6 @@ video {
   width: 350px;
 }
 
-.w-\[2000px\] {
-  width: 2000px;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -866,10 +886,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -926,6 +942,10 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-green-200 {
@@ -997,28 +1017,32 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
+
+.bg-pink-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 242 248 / var(--tw-bg-opacity));
+}
+
+.bg-pink-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+}
+
 .bg-none {
   background-image: none;
 }
 
 .bg-bg-1 {
   background-image: url('../images/p1.jpg');
-}
-
-.bg-bg-hajjvisa {
-  background-image: url('../images/hajjvisa.jpg');
-}
-
-.bg-bg-banner {
-  background-image: url('../images/banner.jpg');
-}
-
-.bg-bg-omravisa {
-  background-image: url('../images/omravisa.jpg');
-}
-
-.bg-bg-tor {
-  background-image: url('../images/tor.jpg');
 }
 
 .bg-cover {
@@ -1099,6 +1123,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1121,6 +1155,14 @@ video {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1196,6 +1238,11 @@ video {
 .text-red-400 {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {

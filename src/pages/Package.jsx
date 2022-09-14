@@ -26,13 +26,11 @@ function Package(){
         <Service>
             <div className=' md:px-16'>
                 <h1 className=' w-full text-center text-3xl underline text-red-600 py-16'>{packag.name}</h1>
-                <div className=' w-full h-auto pb-16 flex flex-col items-start md:flex-row'>
-                    <img className=' w-full md:w-[450px] lg:w-[600px] xl:w-[700px] block shrink-0 h-80 mt-6' src={packag.image.img} alt="" />
-                    <div>
-                        <div className=' p-4'  dangerouslySetInnerHTML={{ __html: packag.details }}>
+                <div className=' w-full h-auto pb-16'>
+                    <img className=' w-full md:w-[450px] lg:w-[600px] xl:w-[700px] h-80 float-right ml-4' src={packag.image.img} alt="" />
+                        <div className=' p-4 clear-left text-justify'  dangerouslySetInnerHTML={{ __html: packag.details }}>
 
                         </div>
-                    </div>
                 </div>
                 </div>
         </Service>

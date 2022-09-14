@@ -1,7 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import logo from '../assets/images/logo.png';
+import logo2 from '../assets/images/Logo-2.png';
 
 
 
@@ -19,14 +18,14 @@ function Footer(){
         {/* <div className=' h-[400px]'>
             
         </div> */}
-        <div className=' w-full bg-slate-600 '>
+        <div className=' w-full bg-pink-100 '>
             <div className=' w-full p-2 mx-auto md:w-[700px] lg:w-[1000px] flex flex-col md:flex-row justify-between'>
                     <div className=' w-full h-auto md:h-60 pt-8 flex items-center flex-col md:flex-row justify-between gap-10 md:gap-0'>
-                    <div className=' w-72 h-auto  text-center text-white flex flex-col justify-center items-center gap-4'>
-                        <img className=' w-[200px]' src={logo} alt=" " />
+                    <div className=' w-72 h-auto  text-center text-black flex flex-col justify-center items-center gap-4'>
+                        <img className=' w-[200px]' src={logo2} alt=" " />
                         {/* <h1 className=' text-2xl uppercase'> Holy Review</h1> */}
                     </div>
-                    <div className=' w-72 h-auto  text-center text-white flex flex-col justify-center items-center gap-4'>
+                    <div className=' w-72 h-auto  text-center text-black flex flex-col justify-center items-center gap-4'>
                         {/* <h1 className=' text-2xl'>OTHER PAGES</h1>
                         <NavLink to="/about" ><h1>About Us</h1></NavLink>
                         
@@ -43,16 +42,13 @@ function Footer(){
                         </div>
                         
                     </div>
-                    <div className=' w-80 h-auto text-white text-center md:text-left flex flex-col gap-2 md:-mr-16'>
-                        <h1  className=' text-2xl'>CONTACT US</h1>
-                        <div><i className="fa-solid fa-phone"></i>  <a href={`tel:${info.phone1}`}> {info.phone1 }</a></div>
-                        <div><i className="fa-solid fa-phone"></i>  <a href={`tel:${info.phone2}`}> {info.phone2 }</a></div>
+                    <div className=' w-80 h-auto text-black text-center md:text-left flex flex-col gap-2 md:-mr-16'>
                         <div><i className="fa-solid fa-envelope"></i> <a href={`mailto:${info.email}`}>{info.email}</a></div>
                         <div><i className="fa-solid fa-location-dot"></i> <span className=' pl-1 italic'>{info.address}</span></div>
                     </div>
                 </div>
             </div>
-            <div className=' bg-slate-800 text-white text-center'>Copyright {year} | Holy Review | All Rights Reserved</div>
+            <div className=' bg-black text-white text-center'>Copyright {year} | Holy Review | All Rights Reserved</div>
         </div>
     </>)
 }
