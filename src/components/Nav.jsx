@@ -89,7 +89,11 @@ function Nav(){
                     <NavLink className={({isActive })=>isActive? " w-full block mt-4  py-[2px] px-1 rounded-md bg-red-600 border-2 border-transparent text-white":" w-full block mt-4  px-1 rounded-md py-[2px] border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"} to="/contact">Contact Us</NavLink>
                 </div>
                 <div className=" w-full mt-6 text-center text-red-600 flex gap-3 flex-col items-center justify-between">
-                    <div><span>Help: </span> <i className="fa-solid fa-phone"></i><a href="tel:+88-02224405634"> 88-02224405634</a></div>
+                    <div>
+                        <span>Help: </span> 
+                        <i className="fa-solid fa-phone"></i><a href={`tel:${info.phone1}`}> {info.phone1 }</a><br />
+                        <i className="fa-solid fa-phone ml-10"></i><a href={`tel:${info.phone2}`}> {info.phone2}</a>
+                    </div>
                     <div><i className="fa-solid fa-location-dot"></i><span> House 40, Road 06, Block C, Banasree, Rampura 1219 Dhaka, Bangladesh</span></div>
                 </div>
             </div>
