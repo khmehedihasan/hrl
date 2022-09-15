@@ -23,7 +23,7 @@ function Home(){
                 return(
                     <div key={index} className=" mt-10 ">
                         <h1 className=' text-center text-xl text-red-600 mt-5 '><span className=' '>{data.name}</span></h1>
-                        <hr className=" w-4/5 h-[2px] mx-auto mb-10 bg-red-600 text-red-600" />
+                        <hr className=" w-4/5 h-[2px] mx-auto mb-10 bg-blue-700 text-red-600" />
                         <div className=' w-full h-auto flex flex-wrap justify-center gap-10'>
                         {
                             data.packages.map((data,index)=>{
